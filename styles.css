@@ -1,0 +1,555 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Share+Tech+Mono:wght@400&display=swap');
+
+:root {
+    --font-mono: 'Share Tech Mono', monospace;
+    --font-header: 'Orbitron', monospace;
+    --font-body: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-mono);
+    line-height: 1.6;
+    color: #a0e7e5;
+    background: #0a0a0a;
+    background-image: 
+        radial-gradient(circle at 25% 25%, #1a1a2e 0%, transparent 50%),
+        radial-gradient(circle at 75% 75%, #16213e 0%, transparent 50%),
+        linear-gradient(45deg, #0f1419 0%, #0a0a0a 100%);
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+        repeating-linear-gradient(
+            0deg,
+            transparent,
+            transparent 3px,
+            rgba(160, 231, 229, 0.015) 3px,
+            rgba(160, 231, 229, 0.015) 4px
+        );
+    pointer-events: none;
+    z-index: 1;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+    z-index: 2;
+}
+
+/* Hero section */
+.hero {
+    background: 
+        linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%),
+        radial-gradient(circle at top left, rgba(58, 134, 255, 0.2) 0%, transparent 50%),
+        radial-gradient(circle at bottom right, rgba(131, 56, 236, 0.2) 0%, transparent 50%);
+    color: #ffffff;
+    text-align: center;
+    padding: 60px 0;
+    min-height: 40vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-title {
+    font-family: var(--font-header);
+    font-size: 5rem;
+    font-weight: 900;
+    margin-bottom: 1.5rem;
+    text-shadow: 
+        0 0 3px #8338ec,
+        0 0 6px #8338ec;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.hero-subtitle {
+    font-family: var(--font-mono);
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    color: #7fb3d3;
+    text-shadow: 0 0 3px #7fb3d3;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+}
+
+.hero-description {
+    font-size: 1.3rem;
+    max-width: 800px;
+    margin: 0 auto 2.5rem;
+    line-height: 1.8;
+    color: #e0e0e0;
+    text-shadow: 0 0 2px rgba(255, 255, 255, 0.3);
+    font-family: var(--font-body);
+}
+
+.cta-button {
+    display: inline-block;
+    background: linear-gradient(45deg, #5d737e, #64b5f6);
+    color: white;
+    padding: 18px 40px;
+    font-size: 1.3rem;
+    font-weight: 700;
+    font-family: var(--font-header);
+    text-decoration: none;
+    border-radius: 0;
+    border: 2px solid #7fb3d3;
+    transition: all 0.3s ease;
+    box-shadow: 
+        0 0 5px rgba(127, 179, 211, 0.2),
+        inset 0 0 15px rgba(255, 255, 255, 0.05);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transition: left 0.5s;
+}
+
+.cta-button:hover::before {
+    left: 100%;
+}
+
+.cta-button:hover {
+    background: linear-gradient(45deg, #64b5f6, #90caf9);
+    transform: translateY(-3px);
+    box-shadow: 
+        0 5px 20px rgba(100, 181, 246, 0.4),
+        inset 0 0 25px rgba(255, 255, 255, 0.2);
+    border-color: #90caf9;
+}
+
+/* About section */
+.about {
+    padding: 60px 0;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a2e1a 50%, #0f1919 100%);
+    position: relative;
+}
+
+.about h2 {
+    text-align: center;
+    font-family: var(--font-header);
+    font-size: 3.5rem;
+    margin-bottom: 2.5rem;
+    color: #6b8e6b;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-shadow: 
+        0 0 3px #6b8e6b,
+        0 0 6px #6b8e6b;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+}
+
+.about-card {
+    background: 
+        linear-gradient(135deg, rgba(107, 142, 107, 0.1) 0%, rgba(139, 195, 139, 0.1) 100%),
+        rgba(0, 0, 0, 0.7);
+    padding: 2rem;
+    border: 1px solid #6b8e6b;
+    box-shadow: 
+        0 0 10px rgba(107, 142, 107, 0.15),
+        inset 0 0 20px rgba(255, 255, 255, 0.03);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-card h3 {
+    font-family: var(--font-header);
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+    color: #9dd99d;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    text-shadow: 0 0 3px #9dd99d;
+}
+
+.about-card p {
+    color: #e0e0e0;
+    line-height: 1.8;
+    font-size: 1.1rem;
+    font-family: var(--font-body);
+}
+
+/* Inspiration section */
+.inspiration {
+    padding: 60px 0;
+    background: linear-gradient(135deg, #1a1a2e 0%, #0f2860 50%, #0a0a1a 100%);
+    position: relative;
+}
+
+.inspiration h2 {
+    text-align: center;
+    font-family: var(--font-header);
+    font-size: 3.5rem;
+    margin-bottom: 2.5rem;
+    color: #64b5f6;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-shadow: 
+        0 0 3px #64b5f6,
+        0 0 6px #64b5f6;
+}
+
+.inspiration-description {
+    text-align: center;
+    font-size: 1.3rem;
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    line-height: 1.8;
+    color: #e0e0e0;
+    text-shadow: 0 0 2px rgba(255, 255, 255, 0.3);
+    font-family: var(--font-body);
+}
+
+.inspiration-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+}
+
+.inspiration-card {
+    background: 
+        linear-gradient(135deg, rgba(100, 181, 246, 0.1) 0%, rgba(127, 179, 211, 0.1) 100%),
+        rgba(0, 0, 0, 0.7);
+    padding: 2rem;
+    border: 1px solid #64b5f6;
+    box-shadow: 
+        0 0 10px rgba(100, 181, 246, 0.15),
+        inset 0 0 20px rgba(255, 255, 255, 0.03);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.inspiration-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 
+        0 8px 30px rgba(100, 181, 246, 0.25),
+        inset 0 0 20px rgba(255, 255, 255, 0.05);
+}
+
+.inspiration-card h3 {
+    font-family: var(--font-header);
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #90caf9;
+    text-shadow: 0 0 3px #90caf9;
+    transition: all 0.3s ease;
+}
+
+.inspiration-card:hover h3 {
+    color: #bbdefb;
+    text-shadow: 0 0 2px #bbdefb;
+}
+
+.inspiration-card p {
+    color: #e0e0e0;
+    line-height: 1.8;
+    font-size: 1.1rem;
+    font-family: var(--font-body);
+}
+
+/* Venue section */
+.venue {
+    padding: 60px 0;
+    background: linear-gradient(45deg, #1a0f0f 0%, #2e1a1a 50%, #190a0a 100%);
+    position: relative;
+}
+
+.venue h2 {
+    text-align: center;
+    font-family: var(--font-header);
+    font-size: 3.5rem;
+    margin-bottom: 2.5rem;
+    color: #b57d7d;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-shadow: 
+        0 0 3px #b57d7d,
+        0 0 6px #b57d7d;
+}
+
+.venue-info {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    border: 1px solid #b57d7d;
+    box-shadow: 
+        0 0 20px rgba(181, 125, 125, 0.15),
+        inset 0 0 20px rgba(255, 255, 255, 0.03);
+}
+
+.venue-info h3 {
+    font-family: var(--font-header);
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+    color: #d4a4a4;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.venue-info p {
+    font-size: 1.3rem;
+    color: #e0e0e0;
+    margin-bottom: 1rem;
+    font-family: var(--font-body);
+}
+
+/* Sponsors section */
+.sponsors {
+    padding: 60px 0;
+    background: linear-gradient(135deg, #1a0a1a 0%, #2e1a2e 50%, #190f19 100%);
+    position: relative;
+}
+
+.sponsors h2 {
+    text-align: center;
+    font-family: var(--font-header);
+    font-size: 3.5rem;
+    margin-bottom: 2.5rem;
+    color: #9575b0;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-shadow: 
+        0 0 3px #9575b0,
+        0 0 6px #9575b0;
+}
+
+.sponsors-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    align-items: center;
+    justify-items: center;
+}
+
+.sponsor-link {
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    max-width: 280px;
+}
+
+.sponsor-placeholder {
+    background: 
+        linear-gradient(135deg, rgba(149, 117, 176, 0.1) 0%, rgba(186, 156, 213, 0.1) 100%),
+        rgba(0, 0, 0, 0.7);
+    border: 1px solid #9575b0;
+    padding: 2rem;
+    box-shadow: 
+        0 0 20px rgba(149, 117, 176, 0.15),
+        inset 0 0 20px rgba(255, 255, 255, 0.03);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 150px;
+}
+
+.sponsor-link:hover .sponsor-placeholder {
+    transform: translateY(-5px);
+    box-shadow: 
+        0 8px 30px rgba(149, 117, 176, 0.25),
+        inset 0 0 20px rgba(255, 255, 255, 0.05);
+}
+
+.sponsor-logo {
+    max-width: 100%;
+    max-height: 80px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Footer */
+footer {
+    background: 
+        linear-gradient(135deg, #0f1419 0%, #0a0a0a 100%),
+        repeating-linear-gradient(90deg, transparent, transparent 2px, rgba(160, 231, 229, 0.05) 2px, rgba(160, 231, 229, 0.05) 4px);
+    color: #a0e7e5;
+    padding: 40px 0;
+    text-align: center;
+    border-top: 2px solid #5d737e;
+    position: relative;
+}
+
+footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #5d737e, #64b5f6, #7fb3d3, #5d737e);
+}
+
+footer p {
+    font-family: var(--font-mono);
+    font-size: 1.1rem;
+    text-shadow: 0 0 3px #a0e7e5;
+    letter-spacing: 0.02em;
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 3rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.4rem;
+    }
+    
+    .hero-description {
+        font-size: 1.1rem;
+    }
+    
+    .hero {
+        padding: 50px 0;
+    }
+    
+    .about h2, .venue h2, .sponsors h2 {
+        font-size: 2.5rem;
+    }
+    
+    .inspiration h2 {
+        font-size: 2.5rem;
+    }
+    
+    .about, .venue, .sponsors {
+        padding: 50px 0;
+    }
+    
+    .inspiration {
+        padding: 50px 0;
+    }
+    
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .inspiration-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .sponsors-grid {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 2rem;
+    }
+    
+    .container {
+        padding: 0 20px;
+    }
+    
+    .venue-info {
+        padding: 2rem;
+    }
+    
+    .about-card {
+        padding: 2rem;
+    }
+    
+    .inspiration-card {
+        padding: 2rem;
+    }
+    
+    .sponsor-placeholder {
+        padding: 1.5rem;
+    }
+    
+    footer {
+        padding: 40px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 2.2rem;
+    }
+    
+    .cta-button {
+        padding: 16px 32px;
+        font-size: 1.1rem;
+    }
+    
+    .about-card, .venue-info, .sponsor-placeholder {
+        padding: 1.5rem;
+    }
+    
+    .inspiration-card {
+        padding: 1.5rem;
+    }
+    
+    .about h2, .venue h2, .sponsors h2 {
+        font-size: 2rem;
+    }
+    
+    .inspiration h2 {
+        font-size: 2rem;
+    }
+    
+    .venue-info h3 {
+        font-size: 1.8rem;
+    }
+    
+    .about-card h3 {
+        font-size: 1.4rem;
+    }
+    
+    .hero {
+        padding: 40px 0;
+    }
+    
+    .about, .venue, .sponsors {
+        padding: 40px 0;
+    }
+    
+    .inspiration {
+        padding: 40px 0;
+    }
+    
+    .container {
+        padding: 0 15px;
+    }
+    
+    footer {
+        padding: 30px 0;
+    }
+}
