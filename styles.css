@@ -60,7 +60,7 @@ body::before {
         radial-gradient(circle at bottom right, rgba(131, 56, 236, 0.2) 0%, transparent 50%);
     color: #ffffff;
     text-align: center;
-    padding: 60px 0;
+    padding: 30px 0;
     min-height: 40vh;
     display: flex;
     align-items: center;
@@ -89,7 +89,7 @@ body::before {
 .hero-subtitle {
     font-family: var(--font-mono);
     font-size: 1.8rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     color: #7fb3d3;
     text-shadow: 0 0 3px #7fb3d3;
     font-weight: 400;
