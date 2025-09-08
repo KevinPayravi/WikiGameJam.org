@@ -80,6 +80,14 @@ body::before {
     letter-spacing: 0.1em;
 }
 
+.hero-logo {
+    max-width: 800px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 1.5rem;
+    filter: drop-shadow(0 0 10px rgba(131, 56, 236, 0.3));
+}
+
 .header-cat {
     width: 120px;
     display: block;
@@ -483,6 +491,11 @@ footer p {
         margin-bottom: 1.2rem;
     }
     
+    .hero-logo {
+        max-width: 480px;
+        margin-bottom: 1.2rem;
+    }
+    
     .hero-subtitle {
         font-size: 1.6rem;
         margin-bottom: 1.8rem;
@@ -535,6 +548,11 @@ footer p {
 @media (max-width: 768px) {
     .hero-title {
         font-size: 3rem;
+    }
+    
+    .hero-logo {
+        max-width: 320px;
+        margin-bottom: 1rem;
     }
     
     .hero-subtitle {
@@ -617,6 +635,11 @@ footer p {
 @media (max-width: 480px) {
     .hero-title {
         font-size: 2.2rem;
+    }
+    
+    .hero-logo {
+        max-width: 280px;
+        margin-bottom: 1rem;
     }
     
     .symbol-icon {
