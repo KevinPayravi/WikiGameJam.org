@@ -99,6 +99,7 @@ body::before {
     text-shadow: 0 0 3px #7fb3d3;
     font-weight: 400;
     letter-spacing: 0.05em;
+    display: none;
 }
 
 .hero-description {
@@ -662,6 +663,7 @@ footer a {
     
     .hero-subtitle {
         font-size: 1.4rem;
+        display: block;
     }
     
     .hero-description {
