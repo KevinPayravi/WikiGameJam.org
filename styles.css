@@ -80,7 +80,7 @@ body::before {
 
 .hero-banner {
     width: 100%;
-    max-width: 2100px;
+    max-width: 1800px;
     height: auto;
     margin-bottom: 1.5rem;
 }
