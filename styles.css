@@ -60,10 +60,8 @@ body::before {
         radial-gradient(circle at bottom right, rgba(131, 56, 236, 0.2) 0%, transparent 50%);
     color: #ffffff;
     text-align: center;
-    padding: 30px 0;
+    padding: 0 0 30px 0;
     min-height: 40vh;
-    display: flex;
-    align-items: center;
     position: relative;
     overflow: hidden;
 }
@@ -80,12 +78,11 @@ body::before {
     letter-spacing: 0.1em;
 }
 
-.hero-logo {
-    max-width: 800px;
+.hero-banner {
     width: 100%;
+    max-width: 2100px;
     height: auto;
     margin-bottom: 1.5rem;
-    filter: drop-shadow(0 0 10px rgba(131, 56, 236, 0.3));
 }
 
 .header-cat {
@@ -235,6 +232,99 @@ body::before {
     line-height: 1.8;
     font-size: 1.1rem;
     font-family: var(--font-body);
+}
+
+/* Schedule section */
+.schedule {
+    background: linear-gradient(135deg, #2e1a0a 0%, #3d2014 50%, #1a0f07 100%);
+}
+
+.schedule h2 {
+    color: #d4a373;
+    text-shadow: 
+        0 0 3px #d4a373,
+        0 0 6px #d4a373;
+}
+
+.schedule-description {
+    text-align: center;
+    font-size: 1.3rem;
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    line-height: 1.8;
+    color: #e0e0e0;
+    text-shadow: 0 0 2px rgba(255, 255, 255, 0.3);
+    font-family: var(--font-body);
+}
+
+.schedule-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.schedule-day {
+    background: 
+        linear-gradient(135deg, rgba(212, 163, 115, 0.1) 0%, rgba(233, 196, 106, 0.1) 100%),
+        rgba(0, 0, 0, 0.7);
+    padding: 2rem;
+    border: 1px solid #d4a373;
+    box-shadow: 
+        0 0 10px rgba(212, 163, 115, 0.15),
+        inset 0 0 20px rgba(255, 255, 255, 0.03);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.schedule-day:hover {
+    transform: translateY(-3px);
+    box-shadow: 
+        0 8px 25px rgba(212, 163, 115, 0.2),
+        inset 0 0 20px rgba(255, 255, 255, 0.05);
+}
+
+.schedule-day h3 {
+    font-family: var(--font-header);
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: #e9c46a;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    text-shadow: 0 0 3px #e9c46a;
+    text-align: center;
+    border-bottom: 1px solid #d4a373;
+    padding-bottom: 0.5rem;
+}
+
+.schedule-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: .3rem;
+    padding: 0.3rem 0;
+    border-bottom: 1px solid rgba(212, 163, 115, 0.2);
+}
+
+.schedule-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.schedule-item .time {
+    font-family: var(--font-mono);
+    font-weight: 700;
+    color: #f4a261;
+    font-size: 1.1rem;
+    min-width: 80px;
+}
+
+.schedule-item .event {
+    font-family: var(--font-body);
+    color: #e0e0e0;
+    font-size: 1.1rem;
+    text-align: right;
+    flex: 1;
 }
 
 /* Inspiration section */
@@ -472,8 +562,14 @@ footer::before {
 footer p {
     font-family: var(--font-mono);
     font-size: 1.1rem;
-    text-shadow: 0 0 3px #a0e7e5;
     letter-spacing: 0.02em;
+}
+
+footer a {
+    color: #a0e7e5;
+    text-decoration: none;
+    border-bottom: 1px dashed #a0e7e5;
+    transition: color 0.3s ease, border-color 0.3s ease;
 }
 
 /* Medium screens - more compact for better space utilization */
@@ -483,7 +579,7 @@ footer p {
     }
     
     .hero {
-        padding: 45px 0;
+        padding: 0 0 45px 0;
     }
     
     .hero-title {
@@ -491,8 +587,7 @@ footer p {
         margin-bottom: 1.2rem;
     }
     
-    .hero-logo {
-        max-width: 480px;
+    .hero-banner {
         margin-bottom: 1.2rem;
     }
     
@@ -523,6 +618,14 @@ footer p {
         gap: 1.8rem;
     }
     
+    .schedule-grid {
+        gap: 1.8rem;
+    }
+    
+    .schedule-day {
+        padding: 1.8rem;
+    }
+    
     .venue-info {
         padding: 1.8rem;
     }
@@ -550,9 +653,11 @@ footer p {
         font-size: 3rem;
     }
     
-    .hero-logo {
+    .hero-banner {
+        content: url("img/wikigamejam.png");
         max-width: 320px;
         margin-bottom: 1rem;
+        padding: 30px 15px 0 15px;
     }
     
     .hero-subtitle {
@@ -580,7 +685,7 @@ footer p {
     }
     
     .hero {
-        padding: 40px 0;
+        padding: 0 0 40px 0;
     }
     
     .section h2 {
@@ -600,6 +705,29 @@ footer p {
     .inspiration-grid {
         grid-template-columns: 1fr;
         gap: 2rem;
+    }
+    
+    .schedule-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .schedule-day {
+        padding: 1.5rem;
+    }
+    
+    .schedule-day h3 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .schedule-item .time {
+        font-size: 1rem;
+        min-width: 70px;
+    }
+    
+    .schedule-item .event {
+        font-size: 1rem;
     }
     
     .sponsors-grid {
@@ -637,8 +765,7 @@ footer p {
         font-size: 2.2rem;
     }
     
-    .hero-logo {
-        max-width: 280px;
+    .hero-banner {
         margin-bottom: 1rem;
     }
     
@@ -669,6 +796,24 @@ footer p {
         padding: 1.2rem;
     }
     
+    .schedule-day {
+        padding: 1.2rem;
+    }
+    
+    .schedule-day h3 {
+        font-size: 1.3rem;
+        margin-bottom: 0.8rem;
+    }
+    
+    .schedule-item .time {
+        font-size: 0.9rem;
+        min-width: 60px;
+    }
+    
+    .schedule-item .event {
+        font-size: 0.9rem;
+    }
+    
     .section h2 {
         font-size: 1.8rem;
         margin-bottom: 1.5rem;
@@ -688,7 +833,7 @@ footer p {
     }
     
     .hero {
-        padding: 40px 0;
+        padding: 0 0 40px 0;
     }
     
     .section {
