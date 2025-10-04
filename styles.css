@@ -416,6 +416,11 @@ a {
     width: 100%;
 }
 
+/* Winning categories section */
+.section.winning-categories {
+    text-align: center;
+}
+
 /* Inspiration section */
 .inspiration {
     background: linear-gradient(135deg, #1a1a2e 0%, #0f2860 50%, #0a0a1a 100%);
