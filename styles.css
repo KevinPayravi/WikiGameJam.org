@@ -44,6 +44,10 @@ body::before {
     z-index: 1;
 }
 
+a {
+    text-decoration: none;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -335,6 +339,79 @@ body::before {
     font-size: 1.1rem;
     text-align: right;
     flex: 1;
+}
+
+.speakers-section {
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.speakers-section h3 {
+    font-family: var(--font-header);
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+    color: #e9c46a;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    text-shadow: 0 0 3px #e9c46a;
+}
+
+.speakers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.speaker-item {
+    background: 
+        linear-gradient(135deg, rgba(212, 163, 115, 0.1) 0%, rgba(233, 196, 106, 0.1) 100%),
+        rgba(0, 0, 0, 0.7);
+    padding: 1.5rem;
+    border: 1px solid #d4a373;
+    box-shadow: 
+        0 0 10px rgba(212, 163, 115, 0.15),
+        inset 0 0 20px rgba(255, 255, 255, 0.03);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 120px;
+    justify-content: center;
+}
+
+.speaker-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 
+        0 8px 25px rgba(212, 163, 115, 0.2),
+        inset 0 0 20px rgba(255, 255, 255, 0.05);
+}
+
+.speaker-item strong {
+    font-family: var(--font-header);
+    font-size: 1.2rem;
+    color: #f4a261;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    margin-bottom: 0.5rem;
+}
+
+.speaker-item span {
+    font-family: var(--font-body);
+    color: #e0e0e0;
+    font-size: 1rem;
+    font-style: italic;
+}
+
+.speaker-item strong,
+.speaker-item span {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
 }
 
 /* Inspiration section */
@@ -741,6 +818,25 @@ footer a {
         font-size: 1rem;
     }
     
+    .speakers-section {
+        margin-top: 3rem;
+    }
+    
+    .speakers-section h3 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .speakers-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1.2rem;
+    }
+    
+    .speaker-item {
+        padding: 1.2rem;
+        min-height: 100px;
+    }
+    
     .sponsors-grid {
         grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
         gap: 2rem;
@@ -822,6 +918,33 @@ footer a {
     }
     
     .schedule-item .event {
+        font-size: 0.9rem;
+    }
+    
+    .speakers-section {
+        margin-top: 2rem;
+    }
+    
+    .speakers-section h3 {
+        font-size: 1.6rem;
+        margin-bottom: 1rem;
+    }
+    
+    .speakers-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .speaker-item {
+        padding: 1rem;
+        min-height: 90px;
+    }
+    
+    .speaker-item strong {
+        font-size: 1.1rem;
+    }
+    
+    .speaker-item span {
         font-size: 0.9rem;
     }
     
