@@ -157,7 +157,6 @@ a {
 }
 
 .cta-button:hover {
-    background: linear-gradient(45deg, #64b5f6, #90caf9);
     transform: translateY(-3px);
     box-shadow: 
         0 5px 20px rgba(100, 181, 246, 0.4),
@@ -216,7 +215,7 @@ a {
     box-shadow: 
         0 0 10px rgba(107, 142, 107, 0.15),
         inset 0 0 20px rgba(255, 255, 255, 0.03);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .card-icon {
@@ -239,6 +238,11 @@ a {
     letter-spacing: 0.05em;
     text-shadow: 0 0 3px #9dd99d;
     text-align: center;
+    transition: all 0.3s ease;
+}
+
+.about-card:hover h3 {
+    text-shadow: 0 0 6px #9dd99d;
 }
 
 .about-card p {
@@ -288,14 +292,6 @@ a {
     box-shadow: 
         0 0 10px rgba(212, 163, 115, 0.15),
         inset 0 0 20px rgba(255, 255, 255, 0.03);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.schedule-day:hover {
-    transform: translateY(-3px);
-    box-shadow: 
-        0 8px 25px rgba(212, 163, 115, 0.2),
-        inset 0 0 20px rgba(255, 255, 255, 0.05);
 }
 
 .schedule-day h3 {
@@ -373,7 +369,7 @@ a {
     box-shadow: 
         0 0 10px rgba(212, 163, 115, 0.15),
         inset 0 0 20px rgba(255, 255, 255, 0.03);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: all 0.3s ease;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -396,6 +392,12 @@ a {
     text-transform: uppercase;
     letter-spacing: 0.02em;
     margin-bottom: 0.5rem;
+    text-shadow: 0 0 3px #f4a261;
+    transition: all 0.3s ease;
+}
+
+.speaker-item:hover strong {
+    text-shadow: 0 0 6px #f4a261;
 }
 
 .speaker-item span {
@@ -452,7 +454,7 @@ a {
     box-shadow: 
         0 0 10px rgba(100, 181, 246, 0.15),
         inset 0 0 20px rgba(255, 255, 255, 0.03);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: all 0.3s ease;
     display: block;
     text-decoration: none;
     color: inherit;
@@ -601,7 +603,7 @@ a {
     box-shadow: 
         0 0 20px rgba(149, 117, 176, 0.15),
         inset 0 0 20px rgba(255, 255, 255, 0.03);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: all 0.3s ease;
     width: 100%;
     display: flex;
     align-items: center;
@@ -656,7 +658,7 @@ footer a {
     color: #a0e7e5;
     text-decoration: none;
     border-bottom: 1px dashed #a0e7e5;
-    transition: color 0.3s ease, border-color 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 /* Medium screens - more compact for better space utilization */
