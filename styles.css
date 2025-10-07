@@ -249,6 +249,12 @@ a {
     font-family: var(--font-body);
 }
 
+.schedule-description a {
+    color: #a0e7e5;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
 .schedule-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
