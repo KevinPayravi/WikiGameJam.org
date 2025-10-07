@@ -419,6 +419,7 @@ a {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 1.25rem;
+    justify-items: center;
 }
 
 .game-card {
@@ -462,10 +463,11 @@ a {
 }
 
 .game-content {
-    padding: 1rem;
+    padding: 0.9rem;
     flex: 1;
     display: flex;
     flex-direction: column;
+    text-align: center;
 }
 
 .game-content h3 {
@@ -481,30 +483,20 @@ a {
 }
 
 .game-authors {
-    margin-bottom: 0.8rem;
+    margin-bottom: 0.6rem;
     display: flex;
     align-items: flex-start;
-    gap: 0.5rem;
+    gap: 0.4rem;
     position: relative;
-}
-
-.author-label {
-    font-family: var(--font-mono);
-    font-size: 0.75rem;
-    color: #7c8ef7;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    margin: 0;
-    flex-shrink: 0;
-    margin-top: 0.15rem;
+    justify-content: center;
 }
 
 .authors-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.4rem;
+    gap: 0.3rem;
     align-items: center;
+    justify-content: center;
 }
 
 .author-link,
@@ -562,16 +554,18 @@ a {
     line-height: 1.6;
     font-size: 0.85rem;
     font-family: var(--font-body);
-    margin-bottom: 1rem;
+    margin-bottom: 0.8rem;
 }
 
 .game-links {
-    margin-bottom: 1rem;
+    margin-top: auto;
+    margin-bottom: 0.5rem;
     font-family: var(--font-body);
-    font-size: 0.75rem;
+    font-size: 0.7rem;
     display: flex;
-    gap: 0.5rem;
+    gap: 0.4rem;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .game-link {
@@ -595,17 +589,16 @@ a {
 }
 
 .winning-badge {
-    margin-top: auto;
     text-align: center;
 }
 
 .badge-text {
     display: inline-block;
     color: #e8a323;
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     font-weight: 700;
     font-family: var(--font-body);
-    letter-spacing: 0.05em;
+    letter-spacing: 0.03em;
 }
 
 .badge-text-content {
@@ -1026,8 +1019,8 @@ footer a {
     }
 
     .games-grid {
-        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-        gap: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 0.8rem;
     }
 
     .game-screenshot {
@@ -1035,12 +1028,12 @@ footer a {
     }
 
     .game-content {
-        padding: 0.8rem;
+        padding: 0.7rem;
     }
 
     .game-content h3 {
-        font-size: 1.1rem;
-        margin-bottom: 0.6rem;
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
     }
 
     .author-link,
@@ -1163,9 +1156,9 @@ footer a {
     }
 
     .game-links {
-        flex-direction: column;
+        flex-direction: row;
         gap: 0.3rem;
-        margin-bottom: 0.4rem;
+        margin-bottom: 0.5rem;
     }
 
     .game-link {
@@ -1183,12 +1176,8 @@ footer a {
     }
 
     .game-authors {
-        margin-bottom: 0.4rem;
-        gap: 0.3rem;
-    }
-
-    .author-label {
-        font-size: 0.6rem;
+        margin-bottom: 0.5rem;
+        gap: 0.25rem;
     }
 
     .section h2 {
