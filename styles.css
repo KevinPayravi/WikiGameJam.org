@@ -17,7 +17,7 @@ body {
     line-height: 1.6;
     color: #a0e7e5;
     background: #0a0a0a;
-    background-image: 
+    background-image:
         radial-gradient(circle at 25% 25%, #1a1a2e 0%, transparent 50%),
         radial-gradient(circle at 75% 75%, #16213e 0%, transparent 50%),
         linear-gradient(45deg, #0f1419 0%, #0a0a0a 100%);
@@ -32,14 +32,12 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: 
-        repeating-linear-gradient(
-            0deg,
+    background:
+        repeating-linear-gradient(0deg,
             transparent,
             transparent 3px,
             rgba(160, 231, 229, 0.015) 3px,
-            rgba(160, 231, 229, 0.015) 4px
-        );
+            rgba(160, 231, 229, 0.015) 4px);
     pointer-events: none;
     z-index: 1;
 }
@@ -58,7 +56,7 @@ a {
 
 /* Hero section */
 .hero {
-    background: 
+    background:
         linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%),
         radial-gradient(circle at top left, rgba(58, 134, 255, 0.2) 0%, transparent 50%),
         radial-gradient(circle at bottom right, rgba(131, 56, 236, 0.2) 0%, transparent 50%);
@@ -75,7 +73,7 @@ a {
     font-size: 5rem;
     font-weight: 900;
     margin-bottom: 1.5rem;
-    text-shadow: 
+    text-shadow:
         0 0 3px #8338ec,
         0 0 6px #8338ec;
     text-transform: uppercase;
@@ -129,38 +127,20 @@ a {
     font-weight: 700;
     font-family: var(--font-header);
     text-decoration: none;
-    border-radius: 0;
-    border: 2px solid #7fb3d3;
+    border: 1px solid #7fb3d3;
+    box-shadow:
+        0 4px 12px rgba(100, 181, 246, 0.15),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1);
     transition: all 0.3s ease;
-    box-shadow: 
-        0 0 5px rgba(127, 179, 211, 0.2),
-        inset 0 0 15px rgba(255, 255, 255, 0.05);
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    position: relative;
-    overflow: hidden;
-}
-
-.cta-button::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
-    transition: left 0.5s;
-}
-
-.cta-button:hover::before {
-    left: 100%;
 }
 
 .cta-button:hover {
     transform: translateY(-3px);
-    box-shadow: 
-        0 5px 20px rgba(100, 181, 246, 0.4),
-        inset 0 0 25px rgba(255, 255, 255, 0.2);
+    box-shadow:
+        0 8px 24px rgba(100, 181, 246, 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.15);
     border-color: #90caf9;
 }
 
@@ -194,10 +174,10 @@ a {
 }
 
 .about h2 {
-    color: #6b8e6b;
-    text-shadow: 
-        0 0 3px #6b8e6b,
-        0 0 6px #6b8e6b;
+    color: #9dd99d;
+    text-shadow:
+        0 0 3px #9dd99d,
+        0 0 6px #9dd99d;
 }
 
 .about-grid {
@@ -207,15 +187,14 @@ a {
 }
 
 .about-card {
-    background: 
+    background:
         linear-gradient(135deg, rgba(107, 142, 107, 0.1) 0%, rgba(139, 195, 139, 0.1) 100%),
         rgba(0, 0, 0, 0.7);
     padding: 2rem;
     border: 1px solid #6b8e6b;
-    box-shadow: 
-        0 0 10px rgba(107, 142, 107, 0.15),
-        inset 0 0 20px rgba(255, 255, 255, 0.03);
-    transition: all 0.3s ease;
+    box-shadow:
+        0 4px 12px rgba(107, 142, 107, 0.15),
+        inset 0 1px 0 rgba(255, 255, 255, 0.05);
 }
 
 .card-icon {
@@ -238,11 +217,6 @@ a {
     letter-spacing: 0.05em;
     text-shadow: 0 0 3px #9dd99d;
     text-align: center;
-    transition: all 0.3s ease;
-}
-
-.about-card:hover h3 {
-    text-shadow: 0 0 6px #9dd99d;
 }
 
 .about-card p {
@@ -258,10 +232,10 @@ a {
 }
 
 .schedule h2 {
-    color: #d4a373;
-    text-shadow: 
-        0 0 3px #d4a373,
-        0 0 6px #d4a373;
+    color: #e9c46a;
+    text-shadow:
+        0 0 3px #e9c46a,
+        0 0 6px #e9c46a;
 }
 
 .schedule-description {
@@ -284,14 +258,14 @@ a {
 }
 
 .schedule-day {
-    background: 
+    background:
         linear-gradient(135deg, rgba(212, 163, 115, 0.1) 0%, rgba(233, 196, 106, 0.1) 100%),
         rgba(0, 0, 0, 0.7);
     padding: 2rem;
     border: 1px solid #d4a373;
-    box-shadow: 
-        0 0 10px rgba(212, 163, 115, 0.15),
-        inset 0 0 20px rgba(255, 255, 255, 0.03);
+    box-shadow:
+        0 4px 12px rgba(212, 163, 115, 0.15),
+        inset 0 1px 0 rgba(255, 255, 255, 0.05);
 }
 
 .schedule-day h3 {
@@ -361,14 +335,14 @@ a {
 }
 
 .speaker-item {
-    background: 
+    background:
         linear-gradient(135deg, rgba(212, 163, 115, 0.1) 0%, rgba(233, 196, 106, 0.1) 100%),
         rgba(0, 0, 0, 0.7);
     padding: 1.5rem;
     border: 1px solid #d4a373;
-    box-shadow: 
-        0 0 10px rgba(212, 163, 115, 0.15),
-        inset 0 0 20px rgba(255, 255, 255, 0.03);
+    box-shadow:
+        0 4px 12px rgba(212, 163, 115, 0.15),
+        inset 0 1px 0 rgba(255, 255, 255, 0.05);
     transition: all 0.3s ease;
     display: flex;
     flex-direction: column;
@@ -380,9 +354,9 @@ a {
 
 .speaker-item:hover {
     transform: translateY(-3px);
-    box-shadow: 
-        0 8px 25px rgba(212, 163, 115, 0.2),
-        inset 0 0 20px rgba(255, 255, 255, 0.05);
+    box-shadow:
+        0 8px 24px rgba(212, 163, 115, 0.2),
+        inset 0 1px 0 rgba(255, 255, 255, 0.08);
 }
 
 .speaker-item strong {
@@ -394,10 +368,6 @@ a {
     margin-bottom: 0.5rem;
     text-shadow: 0 0 3px #f4a261;
     transition: all 0.3s ease;
-}
-
-.speaker-item:hover strong {
-    text-shadow: 0 0 6px #f4a261;
 }
 
 .speaker-item span {
@@ -416,9 +386,236 @@ a {
     width: 100%;
 }
 
-/* Winning categories section */
-.section.winning-categories {
+/* Results section */
+.results {
+    background: linear-gradient(135deg, #1a1a2e 0%, #2a1e3e 50%, #1a0f3d 100%);
+}
+
+.results h2 {
+    color: #b8c7ff;
+    text-shadow:
+        0 0 3px #b8c7ff,
+        0 0 6px #b8c7ff;
+}
+
+.games-description {
     text-align: center;
+    font-size: 1.3rem;
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    line-height: 1.8;
+    color: #e0e0e0;
+    text-shadow: 0 0 2px rgba(255, 255, 255, 0.3);
+    font-family: var(--font-body);
+}
+
+.games-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.25rem;
+}
+
+.game-card {
+    background:
+        linear-gradient(135deg, rgba(124, 142, 247, 0.1) 0%, rgba(155, 181, 255, 0.08) 100%),
+        rgba(10, 10, 20, 0.85);
+    border: 1px solid rgba(124, 142, 247, 0.3);
+    box-shadow:
+        0 4px 12px rgba(124, 142, 247, 0.15),
+        inset 0 1px 0 rgba(255, 255, 255, 0.05);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.game-screenshot-container {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(135deg, #1a1a2e 0%, #2a2a4e 100%);
+}
+
+.game-screenshot-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom,
+            transparent 0%,
+            transparent 70%,
+            rgba(10, 10, 20, 0.8) 100%);
+    pointer-events: none;
+}
+
+.game-screenshot {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.game-content {
+    padding: 1rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.game-content h3 {
+    font-family: var(--font-header);
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+    color: #b8c7ff;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    text-shadow: 0 0 3px rgba(184, 199, 255, 0.3);
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.game-authors {
+    margin-bottom: 0.8rem;
+    padding-bottom: 0.6rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    position: relative;
+}
+
+.game-authors::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent 0%, rgba(124, 142, 247, 0.3) 50%, transparent 100%);
+}
+
+.author-label {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: #7c8ef7;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin: 0;
+    flex-shrink: 0;
+    margin-top: 0.15rem;
+}
+
+.authors-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    align-items: center;
+}
+
+.author-link,
+.authors-list>.author-name {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0.2rem 0.3rem;
+    background: rgba(124, 142, 247, 0.12);
+    border: 1px solid rgba(124, 142, 247, 0.25);
+    transition: all 0.3s ease;
+    font-size: 0.7rem;
+}
+
+.author-link:hover {
+    transform: translateY(-2px);
+    box-shadow:
+        0 3px 6px rgba(124, 142, 247, 0.15),
+        inset 0 1px 0 rgba(255, 255, 255, 0.03);
+}
+
+.author-link .author-name {
+    font-family: var(--font-body);
+    color: #b8c7ff;
+    font-weight: 600;
+    margin-right: 0.3rem;
+}
+
+.authors-list>.author-name {
+    font-family: var(--font-body);
+    color: #b8c7ff;
+    font-weight: 600;
+    margin-right: 0;
+}
+
+.author-social {
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    color: #e0e0e0;
+    opacity: 0.8;
+    font-weight: 500;
+}
+
+.author-link:hover .author-name {
+    color: #d4e2ff;
+}
+
+.author-link:hover .author-social {
+    opacity: 1;
+    color: #f0f0f0;
+}
+
+.game-description {
+    color: #d0d0d0;
+    line-height: 1.6;
+    font-size: 0.85rem;
+    font-family: var(--font-body);
+    margin-bottom: 1rem;
+}
+
+.game-links {
+    margin-bottom: 1rem;
+    font-family: var(--font-body);
+    font-size: 0.75rem;
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.game-link {
+    color: #d4e2ff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    padding: 0.2rem 0.4rem;
+    background: rgba(124, 142, 247, 0.15);
+    border: 1px solid rgba(124, 142, 247, 0.4);
+    display: inline-flex;
+    align-items: center;
+}
+
+.game-link:hover {
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow:
+        0 3px 8px rgba(124, 142, 247, 0.2),
+        inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+.winning-badge {
+    margin-top: auto;
+    text-align: center;
+}
+
+.badge-text {
+    display: inline-block;
+    color: #e8a323;
+    font-size: 0.8rem;
+    font-weight: 700;
+    font-family: var(--font-body);
+    letter-spacing: 0.05em;
+    padding: 0.5rem 1rem;
+}
+
+.badge-text-content {
+    font-style: italic;
 }
 
 /* Inspiration section */
@@ -427,10 +624,10 @@ a {
 }
 
 .inspiration h2 {
-    color: #64b5f6;
-    text-shadow: 
-        0 0 3px #64b5f6,
-        0 0 6px #64b5f6;
+    color: #90caf9;
+    text-shadow:
+        0 0 3px #90caf9,
+        0 0 6px #90caf9;
 }
 
 .inspiration-description {
@@ -451,14 +648,14 @@ a {
 }
 
 .inspiration-card {
-    background: 
+    background:
         linear-gradient(135deg, rgba(100, 181, 246, 0.1) 0%, rgba(127, 179, 211, 0.1) 100%),
         rgba(0, 0, 0, 0.7);
     padding: 2rem;
     border: 1px solid #64b5f6;
-    box-shadow: 
-        0 0 10px rgba(100, 181, 246, 0.15),
-        inset 0 0 20px rgba(255, 255, 255, 0.03);
+    box-shadow:
+        0 4px 12px rgba(100, 181, 246, 0.15),
+        inset 0 1px 0 rgba(255, 255, 255, 0.05);
     transition: all 0.3s ease;
     display: block;
     text-decoration: none;
@@ -466,10 +663,10 @@ a {
 }
 
 .inspiration-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 
-        0 8px 30px rgba(100, 181, 246, 0.25),
-        inset 0 0 20px rgba(255, 255, 255, 0.05);
+    transform: translateY(-3px);
+    box-shadow:
+        0 8px 24px rgba(100, 181, 246, 0.2),
+        inset 0 1px 0 rgba(255, 255, 255, 0.08);
 }
 
 .inspiration-card h3 {
@@ -481,11 +678,6 @@ a {
     color: #90caf9;
     text-shadow: 0 0 3px #90caf9;
     transition: all 0.3s ease;
-}
-
-.inspiration-card:hover h3 {
-    color: #bbdefb;
-    text-shadow: 0 0 2px #bbdefb;
 }
 
 .inspiration-card p {
@@ -500,7 +692,6 @@ a {
     height: auto;
     display: block;
     margin: 0 auto 1.5rem;
-    border-radius: 8px;
 }
 
 .inspiration-card h3 {
@@ -513,10 +704,10 @@ a {
 }
 
 .venue h2 {
-    color: #b57d7d;
-    text-shadow: 
-        0 0 3px #b57d7d,
-        0 0 6px #b57d7d;
+    color: #d4a4a4;
+    text-shadow:
+        0 0 3px #d4a4a4,
+        0 0 6px #d4a4a4;
 }
 
 .venue-info {
@@ -526,9 +717,9 @@ a {
     background: rgba(0, 0, 0, 0.5);
     padding: 2rem;
     border: 1px solid #b57d7d;
-    box-shadow: 
-        0 0 20px rgba(181, 125, 125, 0.15),
-        inset 0 0 20px rgba(255, 255, 255, 0.03);
+    box-shadow:
+        0 4px 12px rgba(181, 125, 125, 0.15),
+        inset 0 1px 0 rgba(255, 255, 255, 0.05);
 }
 
 .venue-info h3 {
@@ -543,26 +734,24 @@ a {
 .venue-info h3 a {
     color: #d4a4a4;
     text-decoration: none;
-    position: relative;
     transition: all 0.3s ease;
     display: inline-block;
     padding: 1rem 2rem;
     border: 1px solid #b57d7d;
-    background: 
+    background:
         linear-gradient(135deg, rgba(181, 125, 125, 0.1) 0%, rgba(212, 164, 164, 0.1) 100%),
         rgba(0, 0, 0, 0.7);
-    box-shadow: 
-        0 0 10px rgba(181, 125, 125, 0.15),
-        inset 0 0 20px rgba(255, 255, 255, 0.03);
+    box-shadow:
+        0 4px 12px rgba(181, 125, 125, 0.15),
+        inset 0 1px 0 rgba(255, 255, 255, 0.05);
 }
 
 .venue-info h3 a:hover {
     color: #f4c4c4;
-    text-shadow: 0 0 2px #f4c4c4;
-    transform: translateY(-5px);
-    box-shadow: 
-        0 8px 30px rgba(181, 125, 125, 0.25),
-        inset 0 0 20px rgba(255, 255, 255, 0.05);
+    transform: translateY(-3px);
+    box-shadow:
+        0 8px 24px rgba(181, 125, 125, 0.2),
+        inset 0 1px 0 rgba(255, 255, 255, 0.08);
 }
 
 .venue-info p {
@@ -579,7 +768,7 @@ a {
 
 .sponsors h2 {
     color: #9575b0;
-    text-shadow: 
+    text-shadow:
         0 0 3px #9575b0,
         0 0 6px #9575b0;
 }
@@ -600,14 +789,14 @@ a {
 }
 
 .sponsor-placeholder {
-    background: 
+    background:
         linear-gradient(135deg, rgba(149, 117, 176, 0.1) 0%, rgba(186, 156, 213, 0.1) 100%),
         rgba(0, 0, 0, 0.7);
     border: 1px solid #9575b0;
     padding: 2rem;
-    box-shadow: 
-        0 0 20px rgba(149, 117, 176, 0.15),
-        inset 0 0 20px rgba(255, 255, 255, 0.03);
+    box-shadow:
+        0 4px 12px rgba(149, 117, 176, 0.15),
+        inset 0 1px 0 rgba(255, 255, 255, 0.05);
     transition: all 0.3s ease;
     width: 100%;
     display: flex;
@@ -617,10 +806,10 @@ a {
 }
 
 .sponsor-link:hover .sponsor-placeholder {
-    transform: translateY(-5px);
-    box-shadow: 
-        0 8px 30px rgba(149, 117, 176, 0.25),
-        inset 0 0 20px rgba(255, 255, 255, 0.05);
+    transform: translateY(-3px);
+    box-shadow:
+        0 8px 24px rgba(149, 117, 176, 0.2),
+        inset 0 1px 0 rgba(255, 255, 255, 0.08);
 }
 
 .sponsor-logo {
@@ -633,7 +822,7 @@ a {
 
 /* Footer */
 footer {
-    background: 
+    background:
         linear-gradient(135deg, #0f1419 0%, #0a0a0a 100%),
         repeating-linear-gradient(90deg, transparent, transparent 2px, rgba(160, 231, 229, 0.05) 2px, rgba(160, 231, 229, 0.05) 4px);
     color: #a0e7e5;
@@ -671,72 +860,65 @@ footer a {
     .container {
         padding: 0 15px;
     }
-    
+
     .hero {
         padding: 0 0 45px 0;
     }
-    
+
     .hero-title {
         font-size: 4rem;
         margin-bottom: 1.2rem;
     }
-    
+
     .hero-banner {
         margin-bottom: 1.2rem;
     }
-    
+
     .hero-subtitle {
         font-size: 1.6rem;
         margin-bottom: 1.8rem;
     }
-    
+
     .hero-description {
         font-size: 1.2rem;
         margin-bottom: 2rem;
     }
-    
+
     .section {
         padding: 45px 0;
     }
-    
+
     .section h2 {
         font-size: 3rem;
         margin-bottom: 2rem;
     }
-    
-    .about-card, .inspiration-card {
+
+    .about-card,
+    .inspiration-card,
+    .schedule-day,
+    .venue-info,
+    .sponsor-placeholder {
         padding: 1.8rem;
     }
-    
-    .about-grid, .inspiration-grid {
-        gap: 1.8rem;
-    }
-    
+
+    .about-grid,
+    .inspiration-grid,
     .schedule-grid {
         gap: 1.8rem;
     }
-    
-    .schedule-day {
-        padding: 1.8rem;
-    }
-    
-    .venue-info {
-        padding: 1.8rem;
-    }
-    
+
     .sponsor-placeholder {
-        padding: 1.8rem;
         min-height: 130px;
     }
-    
+
     .sponsors-grid {
         gap: 1.8rem;
     }
-    
+
     .symbol-icon {
         width: 120px;
     }
-    
+
     .inspiration-gif {
         width: 130px;
     }
@@ -746,129 +928,142 @@ footer a {
     .hero-title {
         font-size: 3rem;
     }
-    
+
     .hero-banner {
         content: url("img/wikigamejam.png");
         max-width: 320px;
         margin-bottom: 1rem;
         padding: 30px 15px 0 15px;
     }
-    
+
     .hero-subtitle {
         font-size: 1.4rem;
         display: block;
     }
-    
+
     .hero-description {
         font-size: 1.1rem;
         flex-direction: column;
         text-align: center;
     }
-    
+
     .section-header {
         flex-direction: column;
         gap: 1rem;
     }
-    
+
     .symbol-icon {
         width: 80px;
         height: 80px;
     }
-    
+
     .inspiration-gif {
         width: 120px;
     }
-    
+
     .hero {
         padding: 0 0 40px 0;
     }
-    
+
     .section h2 {
         font-size: 2.8rem;
         margin-bottom: 2rem;
     }
-    
+
     .section {
         padding: 40px 0;
     }
-    
+
     .about-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 1.5rem;
     }
-    
+
     .inspiration-grid {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
-    
+
     .schedule-grid {
         grid-template-columns: 1fr;
         gap: 1.5rem;
     }
-    
+
     .schedule-day {
         padding: 1.5rem;
     }
-    
+
     .schedule-day h3 {
         font-size: 1.5rem;
         margin-bottom: 1rem;
     }
-    
+
     .schedule-item .time {
         font-size: 1rem;
         min-width: 70px;
     }
-    
+
     .schedule-item .event {
         font-size: 1rem;
     }
-    
+
     .speakers-section {
         margin-top: 3rem;
     }
-    
+
     .speakers-section h3 {
         font-size: 2rem;
         margin-bottom: 1.5rem;
     }
-    
+
     .speakers-grid {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         gap: 1.2rem;
     }
-    
+
     .speaker-item {
         padding: 1.2rem;
         min-height: 100px;
     }
-    
+
     .sponsors-grid {
         grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
         gap: 2rem;
     }
-    
-    .container {
-        padding: 0 15px;
+
+    .games-grid {
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 1rem;
     }
-    
-    .venue-info {
-        padding: 1.8rem;
+
+    .game-screenshot {
+        height: 100px;
     }
-    
-    .about-card {
-        padding: 1.8rem;
+
+    .game-content {
+        padding: 0.8rem;
     }
-    
+
+    .game-content h3 {
+        font-size: 1.1rem;
+        margin-bottom: 0.6rem;
+    }
+
+    .author-link,
+    .authors-list>.author-name {
+        font-size: 0.65rem;
+    }
+
+    .venue-info,
+    .about-card,
     .inspiration-card {
         padding: 1.8rem;
     }
-    
+
     .sponsor-placeholder {
         padding: 1.5rem;
     }
-    
+
     footer {
         padding: 40px 0;
     }
@@ -878,113 +1073,160 @@ footer a {
     .hero-title {
         font-size: 2.2rem;
     }
-    
+
     .hero-banner {
         margin-bottom: 1rem;
     }
-    
+
     .symbol-icon {
         width: 70px;
         height: 70px;
     }
-    
+
     .inspiration-gif {
         width: 100px;
     }
-    
+
     .about-grid {
         grid-template-columns: 1fr;
         gap: 1.5rem;
     }
-    
+
     .cta-button {
         padding: 16px 32px;
         font-size: 1.1rem;
     }
-    
-    .about-card, .venue-info, .sponsor-placeholder {
-        padding: 1.2rem;
-    }
-    
-    .inspiration-card {
-        padding: 1.2rem;
-    }
-    
+
+    .about-card,
+    .venue-info,
+    .sponsor-placeholder,
+    .inspiration-card,
     .schedule-day {
         padding: 1.2rem;
     }
-    
+
     .schedule-day h3 {
         font-size: 1.3rem;
         margin-bottom: 0.8rem;
     }
-    
-    .schedule-item .time {
-        font-size: 0.9rem;
-        min-width: 60px;
-    }
-    
+
+    .schedule-item .time,
     .schedule-item .event {
         font-size: 0.9rem;
     }
-    
+
+    .schedule-item .time {
+        min-width: 60px;
+    }
+
     .speakers-section {
         margin-top: 2rem;
     }
-    
+
     .speakers-section h3 {
         font-size: 1.6rem;
         margin-bottom: 1rem;
     }
-    
+
     .speakers-grid {
         grid-template-columns: 1fr;
         gap: 1rem;
     }
-    
+
     .speaker-item {
         padding: 1rem;
         min-height: 90px;
     }
-    
+
     .speaker-item strong {
         font-size: 1.1rem;
     }
-    
+
     .speaker-item span {
         font-size: 0.9rem;
     }
-    
+
+    .games-grid {
+        grid-template-columns: 1fr;
+        gap: 0.8rem;
+    }
+
+    .game-screenshot {
+        height: 90px;
+    }
+
+    .game-content {
+        padding: 0.7rem;
+    }
+
+    .game-content h3 {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .game-description {
+        font-size: 0.75rem;
+        margin-bottom: 0.7rem;
+    }
+
+    .game-links {
+        flex-direction: column;
+        gap: 0.3rem;
+        margin-bottom: 0.4rem;
+    }
+
+    .game-link {
+        font-size: 0.7rem;
+        justify-content: center;
+    }
+
+    .badge-text {
+        font-size: 0.7rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+    .author-link,
+    .authors-list>.author-name {
+        font-size: 0.6rem;
+    }
+
+    .game-authors {
+        margin-bottom: 0.4rem;
+        padding-bottom: 0.3rem;
+        gap: 0.3rem;
+    }
+
+    .author-label {
+        font-size: 0.6rem;
+    }
+
     .section h2 {
         font-size: 1.8rem;
         margin-bottom: 1.5rem;
     }
-    
+
     .venue-info h3 {
         font-size: 1.8rem;
     }
-    
+
     .venue-info h3 a {
         padding: 0.8rem 1.5rem;
         font-size: 1.8rem;
     }
-    
+
     .about-card h3 {
         font-size: 1.4rem;
     }
-    
-    .hero {
-        padding: 0 0 40px 0;
-    }
-    
+
+    .hero,
     .section {
         padding: 40px 0;
     }
-    
-    .container {
-        padding: 0 15px;
+
+    .hero {
+        padding-top: 0;
     }
-    
+
     footer {
         padding: 30px 0;
     }
