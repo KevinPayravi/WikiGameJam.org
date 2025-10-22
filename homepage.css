@@ -209,7 +209,7 @@ body {
 }
 
 .event-name {
-    font-family: var(--font-header);
+    font-family: var(--font-mono);
     font-weight: 700;
     font-size: 1rem;
     text-transform: uppercase;
