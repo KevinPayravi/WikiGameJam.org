@@ -34,7 +34,7 @@ a:focus {
     outline-offset: 2px;
 }
 
-header {
+header, footer {
     background: var(--color-surface);
     color: var(--color-text-light);
     text-align: center;
@@ -47,23 +47,34 @@ header h1 {
     margin: auto 0 auto 1rem;
 }
 
-header p {
+header p, footer p {
     font-size: var(--font-size-xl);
 }
 
 .container {
-    max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
     position: relative;
     z-index: 2;
 }
 
+@media (min-width: 768px) {
+    .container {
+        max-width: 600px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+    }
+}
+
+h2 {
+    color: var(--color-text-light);
+}
+
 .info-section .label {
     color: var(--color-text-light);
     font-weight: bold;
-}
-
-.wrap {
-  max-width: 800px;
 }
