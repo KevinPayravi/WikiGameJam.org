@@ -1,0 +1,69 @@
+@import url('../variables.css');
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Share+Tech+Mono:wght@400&display=swap');
+
+body {
+    font-family: var(--font-mono);
+    line-height: 1.6;
+    color: var(--color-primary);
+    background: var(--color-background);
+    background-image:
+        radial-gradient(circle at 25% 25%, #1a1a2e 0%, transparent 50%),
+        radial-gradient(circle at 75% 75%, #16213e 0%, transparent 50%),
+        linear-gradient(45deg, #0f1419 0%, var(--color-background) 100%);
+    background-attachment: fixed;
+    overflow-x: hidden;
+    margin:0;
+}
+
+a:link {
+    text-decoration: none;
+    color: var(--color-link);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: var(--color-link-dark);
+}
+
+a:focus {
+    outline: 2px solid var(--color-primary-light);
+    outline-offset: 2px;
+}
+
+header {
+    background: var(--color-surface);
+    color: var(--color-text-light);
+    text-align: center;
+}
+
+header h1 {
+    font-family: var(--font-header);
+    font-size: var(--font-size-4xl);
+    color: var(--color-primary-light);
+    margin: auto 0 auto 1rem;
+}
+
+header p {
+    font-size: var(--font-size-xl);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.info-section .label {
+    color: var(--color-text-light);
+    font-weight: bold;
+}
+
+.wrap {
+  max-width: 800px;
+}

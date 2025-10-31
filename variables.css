@@ -11,6 +11,8 @@
     --color-accent: #a0e7e5;
     --color-text: #e0e0e0;
     --color-text-light: #fff;
+    --color-link: var(--color-accent);
+    --color-link-dark: #558ea8;
     --color-background: #0a0a0a;
     --color-surface: rgba(10, 10, 20, 0.85);
     --color-border: rgba(255, 255, 255, 0.1);
@@ -56,4 +58,5 @@
     --font-size-lg: 1.125rem;
     --font-size-xl: 1.25rem;
     --font-size-2xl: 1.5rem;
+    --font-size-4xl: 2rem;
 }
